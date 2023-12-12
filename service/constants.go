@@ -1,0 +1,5 @@
+package service
+
+const LIBRARY_VERSION = "0.0.1"
+const LIBRARY_VERSION_HASH = "<VERSION_HASH>"
+const LIBRARY_BUILD_DATE = "<BUILD_DATE>"

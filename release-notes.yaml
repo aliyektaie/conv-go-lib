@@ -1,0 +1,31 @@
+metadata:
+  project: python-service-lib
+  latest-version:
+    stable: 1.0.0
+    development:  1.0.0
+versions:
+  - version: 1.0.0
+    changes:
+      new-features:
+        - Implemented all the features available in Java and Python implementations.
+        - Support for header validation and different states (behind gateway or independent mode).
+        - Support for configuration loading and profile overrides.
+        - Support for writing service log both in file and console.
+        - Support for service log file header for future usages.
+        - Support for database migrations.
+        - Support for the DAG-like custom DB migrations. This migration mechanism is cross platform and allow
+          a python service to be compatible with other Convergence Platform services. This version only supports 
+          Postgres.
+        - Support for logging requests and ID assignment to each request.
+        - Support for excluding some request/response fields in the logs by replacing with *******
+        - Support for unified error handlers for HTTP 405 (method not allowed) and if the request JSON is not parseable.
+        - Support for error reporting related to 400 bad requests.
+        - Support for the service info/status endpoint. This endpoint defines the service interface and the 
+          status which is used by the infrastructure and gateway services to integrate it into a Convergence Platform 
+          deployment.
+        - Provide base classes and helpers to define controllers.
+        - Support to communicate with infrastructure service and connect to other services.
+        - Support for profiles, multiple configuration and overriding using environment variables.
+        - Support for declaring the service authorities and pushing them to the authentication service.
+        - Support for saving the service authorities through the authentication service.
+        - Added implementation for a middleware that validates the request based on the JWT roles.
